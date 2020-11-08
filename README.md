@@ -1,5 +1,5 @@
 # mWatcher Version
- **Version**        : v0.0.3 <br>
+ **Version**        : v0.0.4 <br>
  **Release Date**   : 08-Nov-20 <br>
 
 # Welcome to mWatcher!
@@ -50,55 +50,33 @@ mwatcher [OPTION]
 
 
 ## DEFAULT VARIABLES | CONFIGURATIONS
+You can edit default threshold rules file `/etc/mwatcher/rules.sh`
 
 ```bash
-### User defined variables Start
+# vim /etc/mwatcher/rules.sh
+### User defined variables
+## For more details visit https://github.com/HarryTheDevOpsGuy/mwatcher
 
 REPEAT_NOTIFICATION_INTERVAL="30 minutes"
-SLACK_NOTIFICATION="false"
-EMAIL_NOTIFICATION="false"
-export SLACK_CLI_TOKEN=xoxb-343434345454-sdlfkdf-kdfde-example-token
-export SLACK_CHANNEL='#devops'
-FULL_HTML_REPORT_INTERVAL="1 days"
 LOG_DIR="/tmp/mwatcher.log"
-
 # Time Interval to check CPU MEMORY DISK Utilization to avaid spikes
-TIME_INTERVAL="2"
+TIME_INTERVAL="2" # 2 Seconds
 
-MEMORY_ALARM=(
-# 40:Critical
-# 80:Warning
-# 90:Critical
-)
+# Threshold configure ( default no Threshold)
+MEMORY_ALARM=( 70:info 80:Warning 90:Critical )
+CPU_ALARM=(70:info 80:Warning 90:Critical )
+DISK_ALARM=( 70:info 80:warning 90:Critical )
+#SERVICE_STATUS=( nginx:restart mysql ssh )
 
-CPU_ALARM=(
-# 70:Alarm
-# 80:Warning
-# 90:Critical
-)
+# Email Notification
+EMAIL_NOTIFICATION="false"
+FULL_HTML_REPORT_INTERVAL="1 days"
+#EMAIL_NOTIFY_TO=( youremail@gmail.com )
 
-DISK_ALARM=(
-# 10:warning
-# 80:warning
-# 90:Critical
-)
-
-# HTTP_STATUS=(
-# http://www.google.com
-# https://www.facebook.com
-# )
-
-EMAIL_NOTIFY_TO=(
-HarryTheDevOpsGuy@gmail.com
-)
-
-SERVICE_STATUS=(
-# nginx:restart
-# mysql
-# ssh
-)
-
-### User defined variables END
+# Slack Notification
+SLACK_NOTIFICATION="false"
+# export SLACK_CLI_TOKEN=xoxb-343434345454-sdlfkdf-kdfde-example-token
+# export SLACK_CHANNEL='#devops'
 ```
 
 
