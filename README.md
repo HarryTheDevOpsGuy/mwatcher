@@ -1,5 +1,5 @@
 # mWatcher Version
- **Version**        : v0.0.1 <br>
+ **Version**        : v0.0.2 <br>
  **Release Date**   : 08-Nov-20 <br>
 
 # Welcome to mWatcher!
@@ -8,7 +8,7 @@
 
 
 # Getting Start
- ![mWatcher email alert templates](https://raw.githubusercontent.com/HarryTheDevOpsGuy/mCert/master/assets/img/mwatcher.png)
+ ![mWatcher email alert templates](https://raw.githubusercontent.com/HarryTheDevOpsGuy/mwatcher/master/assets/img/mwatcher.png)
 
 It will help you to monitor bulk domain's ssl. it required internet access to fetch certificate details .
 
@@ -22,7 +22,7 @@ if you want get notification on your email you must need to install mSlack. if y
 
 ##### Step 1: Install mwatcher.
 ```bash
-sudo curl -sL "https://github.com/HarryTheDevOpsGuy/mSend/raw/master/mwatcher" -o /usr/bin/mwatcher
+sudo curl -sL "https://github.com/HarryTheDevOpsGuy/mwatcher/raw/master/mwatcher" -o /usr/bin/mwatcher
 sudo chmod +x /usr/bin/mwatcher
 
 # Verify installation
@@ -133,7 +133,7 @@ You can schedule cronjob according to your choice. Here is few example for you. 
 
   #### Email Notification Template | Report
 
-   ![mWatcher email alert templates](https://raw.githubusercontent.com/HarryTheDevOpsGuy/mCert/master/assets/img/email_snapshot.png)
+   ![mWatcher email alert templates](https://raw.githubusercontent.com/HarryTheDevOpsGuy/mwatcher/master/assets/img/email_snapshot.png)
 
 
   #### Thanks you
