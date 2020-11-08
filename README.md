@@ -1,6 +1,6 @@
 # mWatcher Version
- **Version**        : {RELEASE_VER} <br>
- **Release Date**   : {RELEASE_DATE} <br>
+ **Version**        : v0.0.1 <br>
+ **Release Date**   : 08-Nov-20 <br>
 
 # Welcome to mWatcher!
 
@@ -22,7 +22,7 @@ if you want get notification on your email you must need to install mSlack. if y
 
 ##### Step 1: Install mwatcher.
 ```bash
-sudo curl -sL "https://github.com/HarryTheDevOpsGuy/mSend/raw/master/tools/mwatcher" -o /usr/bin/mwatcher
+sudo curl -sL "https://github.com/HarryTheDevOpsGuy/mSend/raw/master/mwatcher" -o /usr/bin/mwatcher
 sudo chmod +x /usr/bin/mwatcher
 
 # Verify installation
