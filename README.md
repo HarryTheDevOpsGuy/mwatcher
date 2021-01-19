@@ -1,6 +1,6 @@
 # mWatcher Version
- **Version**        : v0.1.1 <br>
- **Release Date**   : 17-Jan-21 <br>
+ **Version**        : v0.1.2 <br>
+ **Release Date**   : 19-Jan-21 <br>
 
 # Welcome to mWatcher!
 
