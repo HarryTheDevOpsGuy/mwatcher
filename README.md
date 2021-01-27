@@ -1,5 +1,5 @@
 # mWatcher Version
- **Version**        : v0.1.7 <br>
+ **Version**        : v0.1.8 <br>
  **Release Date**   : 27-Jan-21 <br>
 
 # Welcome to mWatcher!
@@ -8,7 +8,7 @@
 
 
 # Getting Start
- ![mWatcher email alert templates](https://raw.githubusercontent.com/HarryTheDevOpsGuy/mwatcher/master/assets/img/mwatcher.png)
+ ![mWatcher email alert templates](https://raw.githubusercontent.com/mCloud-Automation/mData/master/msend/images/mWatcher.png)
 
 It will help you to monitor bulk domain's ssl. it required internet access to fetch certificate details .
 
@@ -77,6 +77,16 @@ FULL_HTML_REPORT_INTERVAL="1 days"
 SLACK_NOTIFICATION="false"
 # export SLACK_CLI_TOKEN=xoxb-343434345454-sdlfkdf-kdfde-example-token
 # export SLACK_CHANNEL='#devops'
+
+# BLOCK_SPAMMER="true"
+# BLOCK_SPAMMER_RELOAD_NGINX="true"
+# BLOCK_RISK_LEVEL="critical\|High"  # Critical\|High\|Medium
+# # Check top 30 failed requests
+# FAIL_REQUEST_COUNT="30"
+
+# Default Email Template
+# DEFAULT_MWATCHER_TEMPLATE=https://cdn.jsdelivr.net/gh/mCloud-Automation/mData/mWatcher/mwatcher-v2.html
+
 ```
 
 
@@ -111,7 +121,7 @@ You can schedule cronjob according to your choice. Here is few example for you. 
 
   #### Email Notification Template | Report
 
-   ![mWatcher email alert templates](https://raw.githubusercontent.com/HarryTheDevOpsGuy/mwatcher/master/assets/img/email_snapshot.png)
+   ![mWatcher email alert templates](https://cdn.jsdelivr.net/gh/mCloud-Automation/mData/images/server_monitor.png)
 
 
   #### Thanks you
